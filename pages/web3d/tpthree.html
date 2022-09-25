@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three js</title>
+</head>
+<body style="margin:0;">
+    <a href="../../index.html">
+        <img src="../../static/Logo-ufas1.png" alt="school logo"/>
+    </a>
+    <script src="../../layout/js/three.min.js"></script>
+    <script>
+        //creation de la scene
+        var scene = new THREE.Scene();
+
+        //creation du render
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setClearColor(0xffffff,1);
+        renderer.setSize(innerWidth,innerHeight);
+
+        //On ajoute l'objet a page html
+        document.body.appendChild(renderer.domElement);
+
+        //creation de la camera
+        var camera = new THREE.PerspectiveCamera(50,innerWidth/innerHeight,1,10000);
+
+        //La forme de l'objet
+        var geometry = new THREE.BoxGeometry(1,1,1);
+
+        //creation de l'objet
+        var material = new THREE.MeshNormalMaterial();
+        var box = new THREE.Mesh(geometry,material);
+        box.rotation.x=0.5;
+        box.rotation.y=1;
+        box.rotation.z=1.5;
+        box.position.z=-5;
+        scene.add(box);
+
+        animate();
+        function animate(){
+            requestAnimationFrame(animate);
+            box.rotation.x+=0.01;
+            box.rotation.y+=0.02;
+            box.rotation.z+=0.03;
+            renderer.render(scene,camera);
+        }
+
+    </script>
+</body>
+</html>
