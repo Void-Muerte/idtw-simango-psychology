@@ -12,6 +12,9 @@ html{
     font-weight:bolder;
     font-size: xx-large;
 }
+.group-s{
+    text-align: justify;
+}
 p{
     font-size: larger;
 }
@@ -22,7 +25,36 @@ p{
 *{
     box-sizing: border-box;
 }
-#container{
+.container-iframe{
     width:100%;
-    height:100vh;
+    height:50vh;
+    background-color: #87CEEB;
+}
+img.uni-logo{
+    width: 15vw;
+    height: 20vh;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+    margin: .5rem;
+}
+nav.nav-header{
+    text-decoration: none;
+}
+footer{
+    background:inherit;
+    margin-left:auto;
+    padding:.8rem;
+}
+img.web-logo{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin:.5rem;
 }

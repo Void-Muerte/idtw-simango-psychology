@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="../../layout/css/fontAwesome.css"/>
     <link rel="stylesheet" href="../../layout/css/indexWeb.css"/>
 </head>
-<body>
+<body class="container">
     <header>
+        <div class="clearfix">
+            <a href="../../index.html" class="float-md-left d-sm-block">
+                <img src="../../static/Logo-ufas1.png" alt="school logo"class="uni-logo"/>
+            </a>
+            <img src="../../static/logo.jpeg" alt="web3D logo" class="float-md-right web-logo d-sm-block"/>
+        </div>
         
         <nav class="nav">
-            <div class="nav-brand">
-                <a href="../../index.html">
-                    <img src="../../static/Logo-ufas1.png" alt="school logo" style="width: 25vw; height: 30vh;"/>
-                </a>
-            </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
                     <i class="fas fa-bars"></i>
@@ -29,13 +30,13 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">TP1</a></li>
-                    <li class="nav-link"><a href="#">THree js</a></li>
+                    <li class="nav-link"><a href="tp1-web3d.html" target="container-frame">TP1</a></li>
+                    <li class="nav-link active"><a href="tpthree.html" target="container-frame">three.js</a></li>
                 </ul>
             </div>
         </nav>
      </header>
-     <iframe src="tpthree.html" frameborder="0" id="container"></iframe>
+     <iframe src="tpthree.html" frameborder="0" class="container-iframe" name="container-frame"></iframe>
      <footer class="sName">
         <p class="name">Psychology Simango</p>
         <p class="group-s">Group : 1</p>
