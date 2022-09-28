@@ -31,8 +31,8 @@ p{
     background-color: #87CEEB;
 }
 img.uni-logo{
-    width: 15vh;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
     border-radius: .25rem;
     -webkit-border-radius: .25rem;
     -moz-border-radius: .25rem;
@@ -49,8 +49,8 @@ footer{
     padding:.8rem;
 }
 img.web-logo{
-    width: 15vh;
-    height: 15vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
